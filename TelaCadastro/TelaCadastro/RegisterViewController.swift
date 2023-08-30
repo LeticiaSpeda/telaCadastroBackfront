@@ -82,9 +82,10 @@ final class RegisterViewController: UIViewController {
     private lazy var registerButton: UIButton = {
         let button = UIButton()
         button.setTitle("Cadastre-se", for: .normal)
-        button.titleLabel?.textColor = .white
+        button.setTitleColor(.white.withAlphaComponent(0.4), for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.2126274407, green: 0.525538981, blue: 0.939663887, alpha: 1)
         button.layer.cornerRadius = 8
+        button.isEnabled = false
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -92,6 +93,17 @@ final class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
+    }
+    
+    func validateTextField() {
+        if nameTextField.text != "" && emailTextField.text != "" && passwordTextField.text != "" {
+            
+            registerButton.isEnabled = true
+            registerButton.setTitleColor(.white, for: .normal)
+            
+        } else {
+            registerButton.isEnabled = false
+        }
     }
     
     private func commonInit() {
@@ -232,10 +244,11 @@ extension RegisterViewController: UITextFieldDelegate {
         textField.layer.borderColor = #colorLiteral(red: 0.2090068758, green: 0.5254446864, blue: 0.9720764756, alpha: 1)
         textField.layer.borderWidth = 1.5
     }
-   
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.gray.cgColor
+        validateTextField()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
