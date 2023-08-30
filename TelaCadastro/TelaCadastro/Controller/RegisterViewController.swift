@@ -17,47 +17,12 @@ final class RegisterViewController: UIViewController {
     
     private lazy var writePasswordLabel = UILabelCustom(title: "Digite sua senha:")
     
+    private lazy var nameTextField = TextFieldCustom(textPlaceholder: "ex: Joana", hidePassword: false)
     
-    private lazy var nameTextField: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "ex: Joana"
-        tf.textColor = .gray
-        tf.layer.borderWidth = 1
-        tf.layer.borderColor = UIColor.gray.cgColor
-        tf.layer.cornerRadius = 8
-        tf.delegate = self
-        tf.addLeftPadding()
-        tf.translatesAutoresizingMaskIntoConstraints =  false
-        return tf
-    }()
+    private lazy var emailTextField = TextFieldCustom(textPlaceholder: "ex: joana@gmail.com", hidePassword: false)
     
-    private lazy var emailTextField: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "ex: joana@gmail.com"
-        tf.textColor = .gray
-        tf.layer.borderWidth = 1
-        tf.layer.borderColor = UIColor.gray.cgColor
-        tf.layer.cornerRadius = 8
-        tf.keyboardType = .emailAddress
-        tf.delegate = self
-        tf.addLeftPadding()
-        tf.translatesAutoresizingMaskIntoConstraints =  false
-        return tf
-    }()
+    private lazy var passwordTextField = TextFieldCustom(textPlaceholder: "ex: 123@45", hidePassword: true)
     
-    private lazy var passwordTextField: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "ex: 123@45"
-        tf.textColor = .gray
-        tf.layer.borderWidth = 1
-        tf.layer.borderColor = UIColor.gray.cgColor
-        tf.layer.cornerRadius = 8
-        tf.isSecureTextEntry = true
-        tf.delegate = self
-        tf.addLeftPadding()
-        tf.translatesAutoresizingMaskIntoConstraints =  false
-        return tf
-    }()
     
     private lazy var registerButton: UIButton = {
         let button = UIButton()
@@ -67,12 +32,18 @@ final class RegisterViewController: UIViewController {
         button.layer.cornerRadius = 8
         button.isEnabled = false
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
+        
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    
     }
     
     func validateTextField() {
@@ -93,6 +64,10 @@ final class RegisterViewController: UIViewController {
         configureStyle()
     }
     
+    @objc func handleRegister() {
+        print("ok")
+    }
+    
     private func configureHierarchy() {
         view.addSubview(titleScreenLabel)
         view.addSubview(writeNameLabel)
@@ -105,113 +80,56 @@ final class RegisterViewController: UIViewController {
     }
     
     private func configureConstraints() {
-        NSLayoutConstraint.activate([
-            titleScreenLabel.topAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.topAnchor,
-                constant: 16
-            ),
-            titleScreenLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            
-            writeNameLabel.topAnchor.constraint(
-                equalTo: titleScreenLabel.bottomAnchor,
-                constant: 14
-            ),
-            writeNameLabel.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20
-            ),
-            
-            writeEmailLabel.topAnchor.constraint(
-                equalTo: nameTextField.bottomAnchor,
-                constant: 14
-            ),
-            writeEmailLabel.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20),
-            
-            writeEmailLabel.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -20
-            ),
-            
-            writePasswordLabel.topAnchor.constraint(
-                equalTo: emailTextField.bottomAnchor,
-                constant: 14
-            ),
-            writePasswordLabel.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20),
-            
-            writePasswordLabel.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -20
-            ),
-            
-            nameTextField.topAnchor.constraint(
-                equalTo: writeNameLabel.bottomAnchor,
-                constant: 14
-            ),
-            nameTextField.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20
-            ),
-            
-            nameTextField.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -20
-            ),
-            
-            nameTextField.heightAnchor.constraint(equalToConstant: 30),
-            
-            emailTextField.topAnchor.constraint(
-                equalTo: writeEmailLabel.bottomAnchor,
-                constant: 14
-            ),
-            emailTextField.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20
-            ),
-            
-            emailTextField.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -20
-            ),
-            
-            emailTextField.heightAnchor.constraint(equalToConstant: 30),
-            
-            passwordTextField.topAnchor.constraint(
-                equalTo: writePasswordLabel.bottomAnchor,
-                constant: 14
-            ),
-            passwordTextField.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20
-            ),
-            
-            passwordTextField.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -20
-            ),
-            
-            passwordTextField.heightAnchor.constraint(equalToConstant: 30),
-            
-            registerButton.topAnchor.constraint(
-                equalTo: passwordTextField.bottomAnchor,
-                constant: 14
-            ),
-            registerButton.leadingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 20
-            ),
-            
-            registerButton.trailingAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -20
-            ),
-            
-            registerButton.heightAnchor.constraint(equalToConstant: 30),
-            
-        ])
+        
+        titleScreenLabel.makeConstraint {
+            $0.top(reference: view.safeTop, padding: 16)
+            $0.centerX(reference: view.centerX)
+        }
+        
+        writeNameLabel.makeConstraint {
+            $0.top(reference: titleScreenLabel.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+        }
+        
+        writeEmailLabel.makeConstraint {
+            $0.top(reference: nameTextField.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+            $0.trailing(reference: view.safeTrailing, padding: -20)
+        }
+        
+        writePasswordLabel.makeConstraint {
+            $0.top(reference: emailTextField.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+            $0.trailing(reference: view.safeTrailing, padding: -20)
+        }
+        
+        nameTextField.makeConstraint {
+            $0.top(reference: writeNameLabel.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+            $0.trailing(reference: view.safeTrailing, padding: -20)
+            $0.height(30)
+        }
+        
+        emailTextField.makeConstraint {
+            $0.top(reference: writeEmailLabel.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+            $0.trailing(reference: view.safeTrailing, padding: -20)
+            $0.height(30)
+        }
+        
+        passwordTextField.makeConstraint {
+            $0.top(reference: writePasswordLabel.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+            $0.trailing(reference: view.safeTrailing, padding: -20)
+            $0.height(30)
+        }
+        
+        registerButton.makeConstraint {
+            $0.top(reference: passwordTextField.bottom, padding: 14)
+            $0.leading(reference: view.safeLeading, padding: 20)
+            $0.trailing(reference: view.safeTrailing, padding: -20)
+            $0.height(30)
+        }
     }
     
     private func configureStyle() {
@@ -219,33 +137,8 @@ final class RegisterViewController: UIViewController {
     }
 }
 
-extension RegisterViewController: UITextFieldDelegate {
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderColor = #colorLiteral(red: 0.2090068758, green: 0.5254446864, blue: 0.9720764756, alpha: 1)
-        textField.layer.borderWidth = 1.5
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.gray.cgColor
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
+extension RegisterViewController: TextFieldCustomDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         validateTextField()
-    }
-    
-}
-
-extension UITextField {
-    func addLeftPadding(size: Double = 10) {
-        let leftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: size, height: frame.height))
-        leftViewMode = .always
-        leftView = leftPaddingView
     }
 }

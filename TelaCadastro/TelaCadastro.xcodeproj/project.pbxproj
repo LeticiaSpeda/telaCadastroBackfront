@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E034904E2A9F71F000F31E1D /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E034904D2A9F71F000F31E1D /* TextFieldCustom.swift */; };
 		E0EA36192A9ED54000D0068D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA36182A9ED54000D0068D /* AppDelegate.swift */; };
 		E0EA361B2A9ED54000D0068D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA361A2A9ED54000D0068D /* SceneDelegate.swift */; };
 		E0EA361D2A9ED54000D0068D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E034904D2A9F71F000F31E1D /* TextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
 		E0EA36152A9ED54000D0068D /* TelaCadastro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelaCadastro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EA36182A9ED54000D0068D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0EA361A2A9ED54000D0068D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E0EA364C2A9F633800D0068D /* UILabelCustom.swift */,
+				E034904D2A9F71F000F31E1D /* TextFieldCustom.swift */,
 			);
 			path = Customized;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E034904E2A9F71F000F31E1D /* TextFieldCustom.swift in Sources */,
 				E0EA364D2A9F633800D0068D /* UILabelCustom.swift in Sources */,
 				E0EA361D2A9ED54000D0068D /* RegisterViewController.swift in Sources */,
 				E0EA36502A9F653A00D0068D /* Extension+UIView.swift in Sources */,
