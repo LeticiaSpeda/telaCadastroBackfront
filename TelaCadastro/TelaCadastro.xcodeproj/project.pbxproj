@@ -12,6 +12,8 @@
 		E0EA361D2A9ED54000D0068D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */; };
 		E0EA36222A9ED54200D0068D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EA36212A9ED54200D0068D /* Assets.xcassets */; };
 		E0EA36252A9ED54200D0068D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EA36232A9ED54200D0068D /* LaunchScreen.storyboard */; };
+		E0EA364D2A9F633800D0068D /* UILabelCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA364C2A9F633800D0068D /* UILabelCustom.swift */; };
+		E0EA36502A9F653A00D0068D /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA364F2A9F653A00D0068D /* Extension+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		E0EA36262A9ED54200D0068D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0EA362B2A9ED54200D0068D /* TelaCadastroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelaCadastroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EA36352A9ED54200D0068D /* TelaCadastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelaCadastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EA364C2A9F633800D0068D /* UILabelCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelCustom.swift; sourceTree = "<group>"; };
+		E0EA364F2A9F653A00D0068D /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,7 @@
 		E0EA36172A9ED54000D0068D /* TelaCadastro */ = {
 			isa = PBXGroup;
 			children = (
-				E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */,
+				E0EA364A2A9F629100D0068D /* Controller */,
 				E0EA36262A9ED54200D0068D /* Info.plist */,
 			);
 			path = TelaCadastro;
@@ -113,6 +117,32 @@
 				E0EA361A2A9ED54000D0068D /* SceneDelegate.swift */,
 			);
 			path = Aplication;
+			sourceTree = "<group>";
+		};
+		E0EA364A2A9F629100D0068D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */,
+				E0EA364E2A9F64DD00D0068D /* Helpers */,
+				E0EA364B2A9F62AA00D0068D /* Customized */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0EA364B2A9F62AA00D0068D /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA364C2A9F633800D0068D /* UILabelCustom.swift */,
+			);
+			path = Customized;
+			sourceTree = "<group>";
+		};
+		E0EA364E2A9F64DD00D0068D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA364F2A9F653A00D0068D /* Extension+UIView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0EA364D2A9F633800D0068D /* UILabelCustom.swift in Sources */,
 				E0EA361D2A9ED54000D0068D /* RegisterViewController.swift in Sources */,
+				E0EA36502A9F653A00D0068D /* Extension+UIView.swift in Sources */,
 				E0EA36192A9ED54000D0068D /* AppDelegate.swift in Sources */,
 				E0EA361B2A9ED54000D0068D /* SceneDelegate.swift in Sources */,
 			);

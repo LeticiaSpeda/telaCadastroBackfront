@@ -11,32 +11,12 @@ final class RegisterViewController: UIViewController {
         return label
     }()
     
-    private lazy var writeNameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Digite seu nome:"
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private lazy var writeNameLabel = UILabelCustom(title: "Digite seu nome:")
     
-    private lazy var writeEmailLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Digite seu email:"
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private lazy var writeEmailLabel = UILabelCustom(title: "Digite seu email:")
     
-    private lazy var writePasswordLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Digite sua senha:"
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    private lazy var writePasswordLabel = UILabelCustom(title: "Digite sua senha:")
+    
     
     private lazy var nameTextField: UITextField = {
         let tf = UITextField()
