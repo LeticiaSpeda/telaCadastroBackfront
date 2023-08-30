@@ -71,6 +71,16 @@ final class RegisterViewController: UIViewController {
         return tf
     }()
     
+    private lazy var registerButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Cadastre-se", for: .normal)
+        button.titleLabel?.textColor = .white
+        button.backgroundColor = #colorLiteral(red: 0.2126274407, green: 0.525538981, blue: 0.939663887, alpha: 1)
+        button.layer.cornerRadius = 8
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
@@ -90,7 +100,7 @@ final class RegisterViewController: UIViewController {
         view.addSubview(nameTextField)
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
-        
+        view.addSubview(registerButton)
     }
     
     private func configureConstraints() {
@@ -183,6 +193,22 @@ final class RegisterViewController: UIViewController {
             ),
             
             passwordTextField.heightAnchor.constraint(equalToConstant: 30),
+            
+            registerButton.topAnchor.constraint(
+                equalTo: passwordTextField.bottomAnchor,
+                constant: 14
+            ),
+            registerButton.leadingAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+                constant: 20
+            ),
+            
+            registerButton.trailingAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                constant: -20
+            ),
+            
+            registerButton.heightAnchor.constraint(equalToConstant: 30),
             
         ])
     }
