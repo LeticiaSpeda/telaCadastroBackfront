@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0EA36192A9ED54000D0068D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA36182A9ED54000D0068D /* AppDelegate.swift */; };
+		E0EA361B2A9ED54000D0068D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA361A2A9ED54000D0068D /* SceneDelegate.swift */; };
+		E0EA361D2A9ED54000D0068D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */; };
+		E0EA36222A9ED54200D0068D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EA36212A9ED54200D0068D /* Assets.xcassets */; };
+		E0EA36252A9ED54200D0068D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EA36232A9ED54200D0068D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0EA362C2A9ED54200D0068D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EA360D2A9ED54000D0068D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EA36142A9ED54000D0068D;
+			remoteInfo = TelaCadastro;
+		};
+		E0EA36362A9ED54200D0068D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EA360D2A9ED54000D0068D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EA36142A9ED54000D0068D;
+			remoteInfo = TelaCadastro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0EA36152A9ED54000D0068D /* TelaCadastro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelaCadastro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EA36182A9ED54000D0068D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0EA361A2A9ED54000D0068D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E0EA36212A9ED54200D0068D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0EA36242A9ED54200D0068D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0EA36262A9ED54200D0068D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0EA362B2A9ED54200D0068D /* TelaCadastroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelaCadastroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EA36352A9ED54200D0068D /* TelaCadastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelaCadastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0EA36122A9ED54000D0068D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA36282A9ED54200D0068D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA36322A9ED54200D0068D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0EA360C2A9ED54000D0068D = {
+			isa = PBXGroup;
+			children = (
+				E0EA36172A9ED54000D0068D /* TelaCadastro */,
+				E0EA36492A9ED5DE00D0068D /* Aplication */,
+				E0EA36482A9ED58400D0068D /* Assets */,
+				E0EA36162A9ED54000D0068D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0EA36162A9ED54000D0068D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA36152A9ED54000D0068D /* TelaCadastro.app */,
+				E0EA362B2A9ED54200D0068D /* TelaCadastroTests.xctest */,
+				E0EA36352A9ED54200D0068D /* TelaCadastroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0EA36172A9ED54000D0068D /* TelaCadastro */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA361C2A9ED54000D0068D /* RegisterViewController.swift */,
+				E0EA36262A9ED54200D0068D /* Info.plist */,
+			);
+			path = TelaCadastro;
+			sourceTree = "<group>";
+		};
+		E0EA36482A9ED58400D0068D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA36212A9ED54200D0068D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E0EA36492A9ED5DE00D0068D /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				E0EA36232A9ED54200D0068D /* LaunchScreen.storyboard */,
+				E0EA36182A9ED54000D0068D /* AppDelegate.swift */,
+				E0EA361A2A9ED54000D0068D /* SceneDelegate.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0EA36142A9ED54000D0068D /* TelaCadastro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EA363F2A9ED54200D0068D /* Build configuration list for PBXNativeTarget "TelaCadastro" */;
+			buildPhases = (
+				E0EA36112A9ED54000D0068D /* Sources */,
+				E0EA36122A9ED54000D0068D /* Frameworks */,
+				E0EA36132A9ED54000D0068D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelaCadastro;
+			productName = TelaCadastro;
+			productReference = E0EA36152A9ED54000D0068D /* TelaCadastro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0EA362A2A9ED54200D0068D /* TelaCadastroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EA36422A9ED54200D0068D /* Build configuration list for PBXNativeTarget "TelaCadastroTests" */;
+			buildPhases = (
+				E0EA36272A9ED54200D0068D /* Sources */,
+				E0EA36282A9ED54200D0068D /* Frameworks */,
+				E0EA36292A9ED54200D0068D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0EA362D2A9ED54200D0068D /* PBXTargetDependency */,
+			);
+			name = TelaCadastroTests;
+			productName = TelaCadastroTests;
+			productReference = E0EA362B2A9ED54200D0068D /* TelaCadastroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0EA36342A9ED54200D0068D /* TelaCadastroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EA36452A9ED54200D0068D /* Build configuration list for PBXNativeTarget "TelaCadastroUITests" */;
+			buildPhases = (
+				E0EA36312A9ED54200D0068D /* Sources */,
+				E0EA36322A9ED54200D0068D /* Frameworks */,
+				E0EA36332A9ED54200D0068D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0EA36372A9ED54200D0068D /* PBXTargetDependency */,
+			);
+			name = TelaCadastroUITests;
+			productName = TelaCadastroUITests;
+			productReference = E0EA36352A9ED54200D0068D /* TelaCadastroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0EA360D2A9ED54000D0068D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E0EA36142A9ED54000D0068D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E0EA362A2A9ED54200D0068D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E0EA36142A9ED54000D0068D;
+					};
+					E0EA36342A9ED54200D0068D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E0EA36142A9ED54000D0068D;
+					};
+				};
+			};
+			buildConfigurationList = E0EA36102A9ED54000D0068D /* Build configuration list for PBXProject "TelaCadastro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0EA360C2A9ED54000D0068D;
+			productRefGroup = E0EA36162A9ED54000D0068D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0EA36142A9ED54000D0068D /* TelaCadastro */,
+				E0EA362A2A9ED54200D0068D /* TelaCadastroTests */,
+				E0EA36342A9ED54200D0068D /* TelaCadastroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0EA36132A9ED54000D0068D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EA36252A9ED54200D0068D /* LaunchScreen.storyboard in Resources */,
+				E0EA36222A9ED54200D0068D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA36292A9ED54200D0068D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA36332A9ED54200D0068D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0EA36112A9ED54000D0068D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EA361D2A9ED54000D0068D /* RegisterViewController.swift in Sources */,
+				E0EA36192A9ED54000D0068D /* AppDelegate.swift in Sources */,
+				E0EA361B2A9ED54000D0068D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA36272A9ED54200D0068D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EA36312A9ED54200D0068D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0EA362D2A9ED54200D0068D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EA36142A9ED54000D0068D /* TelaCadastro */;
+			targetProxy = E0EA362C2A9ED54200D0068D /* PBXContainerItemProxy */;
+		};
+		E0EA36372A9ED54200D0068D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EA36142A9ED54000D0068D /* TelaCadastro */;
+			targetProxy = E0EA36362A9ED54200D0068D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0EA36232A9ED54200D0068D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0EA36242A9ED54200D0068D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0EA363D2A9ED54200D0068D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0EA363E2A9ED54200D0068D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0EA36402A9ED54200D0068D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelaCadastro/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.TelaCadastro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0EA36412A9ED54200D0068D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TelaCadastro/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.TelaCadastro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E0EA36432A9ED54200D0068D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.TelaCadastroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelaCadastro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TelaCadastro";
+			};
+			name = Debug;
+		};
+		E0EA36442A9ED54200D0068D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.TelaCadastroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelaCadastro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TelaCadastro";
+			};
+			name = Release;
+		};
+		E0EA36462A9ED54200D0068D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.TelaCadastroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TelaCadastro;
+			};
+			name = Debug;
+		};
+		E0EA36472A9ED54200D0068D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXQ8GLHA2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.spedaLeticia.TelaCadastroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TelaCadastro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0EA36102A9ED54000D0068D /* Build configuration list for PBXProject "TelaCadastro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA363D2A9ED54200D0068D /* Debug */,
+				E0EA363E2A9ED54200D0068D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EA363F2A9ED54200D0068D /* Build configuration list for PBXNativeTarget "TelaCadastro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA36402A9ED54200D0068D /* Debug */,
+				E0EA36412A9ED54200D0068D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EA36422A9ED54200D0068D /* Build configuration list for PBXNativeTarget "TelaCadastroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA36432A9ED54200D0068D /* Debug */,
+				E0EA36442A9ED54200D0068D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EA36452A9ED54200D0068D /* Build configuration list for PBXNativeTarget "TelaCadastroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EA36462A9ED54200D0068D /* Debug */,
+				E0EA36472A9ED54200D0068D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0EA360D2A9ED54000D0068D /* Project object */;
+}
