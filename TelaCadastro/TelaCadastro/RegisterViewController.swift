@@ -103,6 +103,7 @@ final class RegisterViewController: UIViewController {
             
         } else {
             registerButton.isEnabled = false
+            registerButton.setTitleColor(.white.withAlphaComponent(0.4), for: .disabled)
         }
     }
     
@@ -253,6 +254,7 @@ extension RegisterViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        return true
     }
 }
 
