@@ -67,6 +67,7 @@ final class RegisterViewController: UIViewController {
         tf.layer.borderWidth = 1
         tf.layer.borderColor = UIColor.gray.cgColor
         tf.layer.cornerRadius = 8
+        tf.isSecureTextEntry = true
         tf.translatesAutoresizingMaskIntoConstraints =  false
         return tf
     }()
